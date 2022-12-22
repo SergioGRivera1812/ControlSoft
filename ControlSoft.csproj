@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Alta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alta.Designer.cs">
+      <DependentUpon>Alta.cs</DependentUpon>
+    </Compile>
     <Compile Include="Clientes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -56,6 +62,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSetClientes.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetClientesN.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetClientesN.xsd</DependentUpon>
     </Compile>
     <Compile Include="DataSetProovedores.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -82,6 +93,15 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Ver.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ver.Designer.cs">
+      <DependentUpon>Ver.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Alta.resx">
+      <DependentUpon>Alta.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Clientes.resx">
       <DependentUpon>Clientes.cs</DependentUpon>
     </EmbeddedResource>
@@ -104,6 +124,9 @@
     <EmbeddedResource Include="Splash.resx">
       <DependentUpon>Splash.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Ver.resx">
+      <DependentUpon>Ver.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="DataSetClientes.xsc">
       <DependentUpon>DataSetClientes.xsd</DependentUpon>
     </None>
@@ -114,6 +137,17 @@
     </None>
     <None Include="DataSetClientes.xss">
       <DependentUpon>DataSetClientes.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetClientesN.xsc">
+      <DependentUpon>DataSetClientesN.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetClientesN.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetClientesN.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSetClientesN.xss">
+      <DependentUpon>DataSetClientesN.xsd</DependentUpon>
     </None>
     <None Include="DataSetProovedores.xsc">
       <DependentUpon>DataSetProovedores.xsd</DependentUpon>
@@ -174,6 +208,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\salida.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ver.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ver1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\registro.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

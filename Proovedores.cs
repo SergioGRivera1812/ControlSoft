@@ -27,8 +27,25 @@ namespace ControlSoft
         private void pictureAceptarA_Click(object sender, EventArgs e)
         {
             //ALTA
-            this.proovedoresTableAdapter.GuardarP(textCodigoPA.Text, textNombrePA.Text, textTipoPA.Text);
-            this.proovedoresTableAdapter.Fill(this.dataSetProovedores.Proovedores);
+            if (textCodigoPA.Text == String.Empty)
+            {
+                MessageBox.Show("Campo ID vacio , favor de llenarlo", "AVISO");
+            }
+            else
+            {
+                try
+                {
+                    this.proovedoresTableAdapter.GuardarP(textCodigoPA.Text, textNombrePA.Text, textTipoPA.Text);
+                    this.proovedoresTableAdapter.Fill(this.dataSetProovedores.Proovedores);
+
+                }
+                catch (System.Data.SqlClient.SqlException)
+                {
+                    MessageBox.Show("ID duplicado", "AVISO");
+                }
+
+            }
+            
 
         }
 
@@ -94,6 +111,18 @@ namespace ControlSoft
                 MessageBox.Show("Favor de seleccionar la primera columna para continuar", "AVISO");
 
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            textCodigoPA.Text = "";
+            textNombrePA.Text = "";
+            textTipoPA.Text = "";
+            textCodigoPM.Text = "";
+            textNombrePM.Text = "";
+            textTipoPM.Text = "";
+            textCodigoPB.Text = "";
+
         }
     }
 }
