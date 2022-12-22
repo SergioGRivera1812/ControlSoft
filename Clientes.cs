@@ -24,47 +24,7 @@ namespace ControlSoft
             // TODO: esta línea de código carga datos en la tabla 'dataSetClientes.Clientes' Puede moverla o quitarla según sea necesario.
            // this.clientesTableAdapter.Fill(this.dataSetClientes.Clientes);
 
-        }
-
-        private void pictureAceptarA_Click(object sender, EventArgs e)
-        {
-           /* if (textCodigoA.Text == String.Empty)
-            {
-                MessageBox.Show("Campo ID vacio , favor de llenarlo", "AVISO");
-            }
-            else
-            {
-                try
-                {
-
-                    this.clientesTableAdapter.GuardarC(textCodigoA.Text, textNombreA.Text, textGiroA.Text, textRFCA.Text);
-                    this.clientesTableAdapter.Fill(this.dataSetClientes.Clientes);
-                }
-                catch (System.Data.SqlClient.SqlException)
-                {
-                    MessageBox.Show("ID duplicado", "AVISO");
-                }
-
-            }*/
-           
-        }
-
-        private void pictureAceptarB_Click(object sender, EventArgs e)
-        {
-            /*//ELIMINAR
-            this.clientesTableAdapter.EliminarC(textCodigoB.Text);
-            this.clientesTableAdapter.Fill(this.dataSetClientes.Clientes);
-            MessageBox.Show("Cliente Eliminado", "AVISO");*/
-        }
-
-        private void pictureAceptarM_Click(object sender, EventArgs e)
-        {
-            //MODIFICAR
-            /*this.clientesTableAdapter.ModificarC(textCodigoM.Text,textNombreM.Text, textGiroM.Text, textRFCM.Text,textCodigoM.Text);
-            this.clientesTableAdapter.Fill(this.dataSetClientes.Clientes);
-            MessageBox.Show("Cliente Modificado", "AVISO");*/
-
-        }
+        }     
 
         private void proovedoresToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -115,19 +75,7 @@ namespace ControlSoft
            
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-    /*        textCodigoA.Text = "";
-            textNombreA.Text = "";
-            textGiroA.Text = "";
-            textRFCA.Text = "";
-            textCodigoM.Text = "";
-            textNombreM.Text = "";
-            textGiroM.Text = "";
-            textRFCM.Text = "";
-            textCodigoB.Text = "";
-    */
-        }
+       
 
         private void pictureAgregar_Click(object sender, EventArgs e)
         {

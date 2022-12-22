@@ -58,10 +58,12 @@
             this.dataSetClientesN = new ControlSoft.DataSetClientesN();
             this.clientesTableAdapter = new ControlSoft.DataSetClientesNTableAdapters.ClientesTableAdapter();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clientesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSetClientesNBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSetClientesN)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // textCorreoC
@@ -308,12 +310,23 @@
             this.panel1.Size = new System.Drawing.Size(79, 73);
             this.panel1.TabIndex = 32;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::ControlSoft.Properties.Resources.expediente;
+            this.pictureBox1.Location = new System.Drawing.Point(236, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(40, 28);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 33;
+            this.pictureBox1.TabStop = false;
+            // 
             // Alta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
             this.ClientSize = new System.Drawing.Size(510, 476);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnAlta);
@@ -335,12 +348,12 @@
             this.Name = "Alta";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Alta";
-  //          this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Alta_FormClosed);
             this.Load += new System.EventHandler(this.Alta_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.clientesBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSetClientesNBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSetClientesN)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -377,5 +390,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn telefonoCDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn correoCDataGridViewTextBoxColumn;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

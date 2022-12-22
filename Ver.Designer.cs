@@ -51,9 +51,6 @@
             this.checkBoxModificar = new System.Windows.Forms.CheckBox();
             this.pictureSalir = new System.Windows.Forms.PictureBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.dataSetClientesN = new ControlSoft.DataSetClientesN();
-            this.clientesBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.clientesTableAdapter = new ControlSoft.DataSetClientesNTableAdapters.ClientesTableAdapter();
             this.codigoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.empresaCDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.giroCDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -61,11 +58,16 @@
             this.nombreCDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.telefonoCDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.correoCDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clientesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dataSetClientesN = new ControlSoft.DataSetClientesN();
+            this.clientesTableAdapter = new ControlSoft.DataSetClientesNTableAdapters.ClientesTableAdapter();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureSalir)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSetClientesN)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clientesBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSetClientesN)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -307,20 +309,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(19, 12);
             this.dataGridView1.TabIndex = 17;
             // 
-            // dataSetClientesN
-            // 
-            this.dataSetClientesN.DataSetName = "DataSetClientesN";
-            this.dataSetClientesN.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // clientesBindingSource
-            // 
-            this.clientesBindingSource.DataMember = "Clientes";
-            this.clientesBindingSource.DataSource = this.dataSetClientesN;
-            // 
-            // clientesTableAdapter
-            // 
-            this.clientesTableAdapter.ClearBeforeFill = true;
-            // 
             // codigoDataGridViewTextBoxColumn
             // 
             this.codigoDataGridViewTextBoxColumn.DataPropertyName = "Codigo";
@@ -363,12 +351,37 @@
             this.correoCDataGridViewTextBoxColumn.HeaderText = "CorreoC";
             this.correoCDataGridViewTextBoxColumn.Name = "correoCDataGridViewTextBoxColumn";
             // 
+            // clientesBindingSource
+            // 
+            this.clientesBindingSource.DataMember = "Clientes";
+            this.clientesBindingSource.DataSource = this.dataSetClientesN;
+            // 
+            // dataSetClientesN
+            // 
+            this.dataSetClientesN.DataSetName = "DataSetClientesN";
+            this.dataSetClientesN.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // clientesTableAdapter
+            // 
+            this.clientesTableAdapter.ClearBeforeFill = true;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::ControlSoft.Properties.Resources.expediente;
+            this.pictureBox1.Location = new System.Drawing.Point(236, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(40, 28);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 34;
+            this.pictureBox1.TabStop = false;
+            // 
             // Ver
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
             this.ClientSize = new System.Drawing.Size(510, 476);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureSalir);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.textCorreoM);
@@ -395,8 +408,9 @@
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureSalir)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSetClientesN)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.clientesBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSetClientesN)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -436,5 +450,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn telefonoCDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn correoCDataGridViewTextBoxColumn;
         public System.Windows.Forms.CheckBox checkBoxEliminar;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

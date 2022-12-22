@@ -34,17 +34,11 @@ namespace ControlSoft
             if (checkBoxEliminar.Checked)
             {
                 btnEliminar.Visible = true;
-                textEmpresaM.Text = "";
-                textGiroM.Text = "";
-                textRFCM.Text = "";
-                textNombreM.Text = "";
-                textTelefonoM.Text = "";
-                textCorreoM.Text = "";
             }
             else
             {
                 btnEliminar.Visible = false;
-               
+
             }
         }
 

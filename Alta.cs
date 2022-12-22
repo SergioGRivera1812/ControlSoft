@@ -26,8 +26,24 @@ namespace ControlSoft
 
         private void btnModificar_Click(object sender, EventArgs e)
         {
-           this.clientesTableAdapter.GuardarC(textCodigo.Text, textEmpresa.Text, textGiro.Text, textRFCC.Text, textNombreC.Text, textTelefonoC.Text, textCorreoC.Text);
-            this.Dispose(); 
+            if (textCodigo.Text == String.Empty)
+             {
+                 MessageBox.Show("Campo ID vacio , favor de llenarlo", "AVISO");
+             }
+             else
+             {
+                 try
+                 {
+                    this.clientesTableAdapter.GuardarC(textCodigo.Text, textEmpresa.Text, textGiro.Text, textRFCC.Text, textNombreC.Text, textTelefonoC.Text, textCorreoC.Text);
+                    this.Dispose();
+                }
+                 catch (System.Data.SqlClient.SqlException)
+                 {
+                     MessageBox.Show("ID duplicado", "AVISO");
+                 }
+
+             }
+            
         }
 
        
