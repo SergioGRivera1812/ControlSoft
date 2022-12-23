@@ -52,6 +52,12 @@
     <Compile Include="Alta.Designer.cs">
       <DependentUpon>Alta.cs</DependentUpon>
     </Compile>
+    <Compile Include="AltaP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AltaP.Designer.cs">
+      <DependentUpon>AltaP.cs</DependentUpon>
+    </Compile>
     <Compile Include="Clientes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,6 +78,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSetProovedores.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetProovedoresN.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetProovedoresN.xsd</DependentUpon>
     </Compile>
     <Compile Include="Inicio.cs">
       <SubType>Form</SubType>
@@ -101,6 +112,9 @@
     </Compile>
     <EmbeddedResource Include="Alta.resx">
       <DependentUpon>Alta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AltaP.resx">
+      <DependentUpon>AltaP.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Clientes.resx">
       <DependentUpon>Clientes.cs</DependentUpon>
@@ -159,6 +173,17 @@
     </None>
     <None Include="DataSetProovedores.xss">
       <DependentUpon>DataSetProovedores.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetProovedoresN.xsc">
+      <DependentUpon>DataSetProovedoresN.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetProovedoresN.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetProovedoresN.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSetProovedoresN.xss">
+      <DependentUpon>DataSetProovedoresN.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

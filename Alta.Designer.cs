@@ -35,7 +35,7 @@
             this.textRFCC = new System.Windows.Forms.TextBox();
             this.textGiro = new System.Windows.Forms.TextBox();
             this.textEmpresa = new System.Windows.Forms.TextBox();
-            this.textCodigo = new System.Windows.Forms.TextBox();
+            this.textCodigoP = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -58,11 +58,13 @@
             this.dataSetClientesN = new ControlSoft.DataSetClientesN();
             this.clientesTableAdapter = new ControlSoft.DataSetClientesNTableAdapters.ClientesTableAdapter();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureSalir = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clientesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSetClientesNBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSetClientesN)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureSalir)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -114,13 +116,13 @@
             this.textEmpresa.Size = new System.Drawing.Size(236, 26);
             this.textEmpresa.TabIndex = 24;
             // 
-            // textCodigo
+            // textCodigoP
             // 
-            this.textCodigo.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textCodigo.Location = new System.Drawing.Point(236, 101);
-            this.textCodigo.Name = "textCodigo";
-            this.textCodigo.Size = new System.Drawing.Size(236, 26);
-            this.textCodigo.TabIndex = 23;
+            this.textCodigoP.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textCodigoP.Location = new System.Drawing.Point(236, 101);
+            this.textCodigoP.Name = "textCodigoP";
+            this.textCodigoP.Size = new System.Drawing.Size(236, 26);
+            this.textCodigoP.TabIndex = 23;
             // 
             // label8
             // 
@@ -310,6 +312,17 @@
             this.panel1.Size = new System.Drawing.Size(79, 73);
             this.panel1.TabIndex = 32;
             // 
+            // pictureSalir
+            // 
+            this.pictureSalir.Image = global::ControlSoft.Properties.Resources.salida;
+            this.pictureSalir.Location = new System.Drawing.Point(449, 423);
+            this.pictureSalir.Name = "pictureSalir";
+            this.pictureSalir.Size = new System.Drawing.Size(49, 41);
+            this.pictureSalir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureSalir.TabIndex = 34;
+            this.pictureSalir.TabStop = false;
+            this.pictureSalir.Click += new System.EventHandler(this.pictureSalir_Click);
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::ControlSoft.Properties.Resources.expediente;
@@ -326,6 +339,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(91)))));
             this.ClientSize = new System.Drawing.Size(510, 476);
+            this.Controls.Add(this.pictureSalir);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.dataGridView1);
@@ -336,7 +350,7 @@
             this.Controls.Add(this.textRFCC);
             this.Controls.Add(this.textGiro);
             this.Controls.Add(this.textEmpresa);
-            this.Controls.Add(this.textCodigo);
+            this.Controls.Add(this.textCodigoP);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label7);
@@ -353,6 +367,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.clientesBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSetClientesNBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSetClientesN)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureSalir)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -367,7 +382,7 @@
         private System.Windows.Forms.TextBox textRFCC;
         private System.Windows.Forms.TextBox textGiro;
         private System.Windows.Forms.TextBox textEmpresa;
-        private System.Windows.Forms.TextBox textCodigo;
+        private System.Windows.Forms.TextBox textCodigoP;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
@@ -391,5 +406,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn correoCDataGridViewTextBoxColumn;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureSalir;
     }
 }

@@ -71,6 +71,15 @@ namespace ControlSoft
         {
             //ELIMINAR
             this.clientesTableAdapter.EliminarC(textCodigoM.Text);
+            textCodigoM.Text = "";
+            textEmpresaM.Text = "";
+            textGiroM.Text = "";
+            textRFCM.Text = "";
+            textNombreM.Text = "";
+            textTelefonoM.Text = "";
+            textCorreoM.Text = "";
+
+
         }
     }
 }

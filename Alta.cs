@@ -26,7 +26,7 @@ namespace ControlSoft
 
         private void btnModificar_Click(object sender, EventArgs e)
         {
-            if (textCodigo.Text == String.Empty)
+            if (textCodigoP.Text == String.Empty)
              {
                  MessageBox.Show("Campo ID vacio , favor de llenarlo", "AVISO");
              }
@@ -34,7 +34,7 @@ namespace ControlSoft
              {
                  try
                  {
-                    this.clientesTableAdapter.GuardarC(textCodigo.Text, textEmpresa.Text, textGiro.Text, textRFCC.Text, textNombreC.Text, textTelefonoC.Text, textCorreoC.Text);
+                    this.clientesTableAdapter.GuardarC(textCodigoP.Text, textEmpresa.Text, textGiro.Text, textRFCC.Text, textNombreC.Text, textTelefonoC.Text, textCorreoC.Text);
                     this.Dispose();
                 }
                  catch (System.Data.SqlClient.SqlException)
@@ -46,6 +46,9 @@ namespace ControlSoft
             
         }
 
-       
+        private void pictureSalir_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+        }
     }
 }
